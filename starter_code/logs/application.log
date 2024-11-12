@@ -1,0 +1,301 @@
+2024-11-12 20:08:37.143  INFO 9616 --- [main] c.example.demo.SareetaApplicationTests   : Starting SareetaApplicationTests on DESKTOP-4II72Q0 with PID 9616 (started by dt in D:\Udacity\JavaSping\projects\security-and-devOps\starter_code)
+2024-11-12 20:08:37.156  INFO 9616 --- [main] c.example.demo.SareetaApplicationTests   : No active profile set, falling back to default profiles: default
+2024-11-12 20:08:37.837  INFO 9616 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-12 20:08:37.916  INFO 9616 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 64ms. Found 4 JPA repository interfaces.
+2024-11-12 20:08:38.866  INFO 9616 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-12 20:08:38.934  INFO 9616 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.18.Final
+2024-11-12 20:08:39.166  INFO 9616 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2024-11-12 20:08:39.327  INFO 9616 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-11-12 20:08:39.591  INFO 9616 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-11-12 20:08:39.616  INFO 9616 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2024-11-12 20:08:40.746  INFO 9616 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-11-12 20:08:40.753  INFO 9616 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-12 20:08:41.327  WARN 9616 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-12 20:08:41.951  INFO 9616 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1a390b8c, org.springframework.security.web.context.SecurityContextPersistenceFilter@1c5fd813, org.springframework.security.web.header.HeaderWriterFilter@526fc044, org.springframework.web.filter.CorsFilter@337eeceb, org.springframework.security.web.authentication.logout.LogoutFilter@789d8fd6, com.example.demo.security.JWTAuthenticationFilter@237d0625, com.example.demo.security.JWTAuthenticationVerficationFilter@1a5a4f8, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4abdd5e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@54d46c8, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5392aa2b, org.springframework.security.web.session.SessionManagementFilter@4aea57dc, org.springframework.security.web.access.ExceptionTranslationFilter@184bb873, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1d38cdde]
+2024-11-12 20:08:42.139  INFO 9616 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2024-11-12 20:08:42.369  INFO 9616 --- [main] c.example.demo.SareetaApplicationTests   : Started SareetaApplicationTests in 5.798 seconds (JVM running for 7.667)
+2024-11-12 20:08:42.894  INFO 9616 --- [main] c.e.demo.controllers.UserController      : Received request to create user with username: testUser
+2024-11-12 20:08:42.894  WARN 9616 --- [main] c.e.demo.controllers.UserController      : Password validation failed for username: testUser
+2024-11-12 20:08:42.894 ERROR 9616 --- [main] c.e.demo.controllers.UserController      : CreateUser request failures for username: testUser
+2024-11-12 20:08:42.898  INFO 9616 --- [main] c.e.demo.controllers.UserController      : Received request to find user by username: unknownUser
+2024-11-12 20:08:42.899  WARN 9616 --- [main] c.e.demo.controllers.UserController      : User not found for username: unknownUser
+2024-11-12 20:08:42.902  INFO 9616 --- [main] c.e.demo.controllers.UserController      : Received request to find user by ID: 1
+2024-11-12 20:08:42.911  INFO 9616 --- [main] c.e.demo.controllers.UserController      : Received request to find user by ID: 1
+2024-11-12 20:08:42.914  INFO 9616 --- [main] c.e.demo.controllers.UserController      : Received request to create user with username: testUser
+2024-11-12 20:08:42.914  WARN 9616 --- [main] c.e.demo.controllers.UserController      : Password validation failed for username: testUser
+2024-11-12 20:08:42.914 ERROR 9616 --- [main] c.e.demo.controllers.UserController      : CreateUser request failures for username: testUser
+2024-11-12 20:08:42.918  INFO 9616 --- [main] c.e.demo.controllers.UserController      : Received request to create user with username: testUser
+2024-11-12 20:08:42.919  INFO 9616 --- [main] c.e.demo.controllers.UserController      : CreateUser request successes with username: testUser
+2024-11-12 20:08:42.925  INFO 9616 --- [main] c.e.demo.controllers.UserController      : Received request to find user by username: testUser
+2024-11-12 20:08:42.925  INFO 9616 --- [main] c.e.demo.controllers.UserController      : User found for username: testUser
+2024-11-12 20:08:42.985  INFO 9616 --- [main] c.e.demo.controllers.OrderController     : Received request for order history of username: unknownUser
+2024-11-12 20:08:42.985  WARN 9616 --- [main] c.e.demo.controllers.OrderController     : Order history request failed: User not found for username: unknownUser
+2024-11-12 20:08:42.989  INFO 9616 --- [main] c.e.demo.controllers.OrderController     : Received order submission request for username: unknownUser
+2024-11-12 20:08:42.990  WARN 9616 --- [main] c.e.demo.controllers.OrderController     : Order submission failed: User not found for username: unknownUser
+2024-11-12 20:08:42.990 ERROR 9616 --- [main] c.e.demo.controllers.OrderController     : Order requests failures: User not found for username: unknownUser
+2024-11-12 20:08:42.993  INFO 9616 --- [main] c.e.demo.controllers.OrderController     : Received request for order history of username: testUser
+2024-11-12 20:08:42.994  INFO 9616 --- [main] c.e.demo.controllers.OrderController     : Order history successfully retrieved for username: testUser
+2024-11-12 20:08:42.997  INFO 9616 --- [main] c.e.demo.controllers.OrderController     : Received order submission request for username: testUser
+2024-11-12 20:08:42.997  INFO 9616 --- [main] c.e.demo.controllers.OrderController     : Order requests successes created for username: testUser
+2024-11-12 20:08:43.004  INFO 9616 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2024-11-12 20:08:43.006  INFO 9616 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-12 20:08:43.008  INFO 9616 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-11-12 20:08:43.011  INFO 9616 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-11-12 20:09:09.837  INFO 12604 --- [main] c.example.demo.SareetaApplicationTests   : Starting SareetaApplicationTests on DESKTOP-4II72Q0 with PID 12604 (started by dt in D:\Udacity\JavaSping\projects\security-and-devOps\starter_code)
+2024-11-12 20:09:09.839  INFO 12604 --- [main] c.example.demo.SareetaApplicationTests   : No active profile set, falling back to default profiles: default
+2024-11-12 20:09:10.298  INFO 12604 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-12 20:09:10.358  INFO 12604 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 52ms. Found 4 JPA repository interfaces.
+2024-11-12 20:09:11.066  INFO 12604 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-12 20:09:11.108  INFO 12604 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.18.Final
+2024-11-12 20:09:11.214  INFO 12604 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2024-11-12 20:09:11.325  INFO 12604 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-11-12 20:09:11.480  INFO 12604 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-11-12 20:09:11.497  INFO 12604 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2024-11-12 20:09:12.199  INFO 12604 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-11-12 20:09:12.206  INFO 12604 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-12 20:09:12.716  WARN 12604 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-12 20:09:13.258  INFO 12604 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@279e8bc0, org.springframework.security.web.context.SecurityContextPersistenceFilter@1e54e900, org.springframework.security.web.header.HeaderWriterFilter@65a2e14e, org.springframework.web.filter.CorsFilter@23ffc910, org.springframework.security.web.authentication.logout.LogoutFilter@4abdd5e, com.example.demo.security.JWTAuthenticationFilter@35277c6c, com.example.demo.security.JWTAuthenticationVerficationFilter@7a364e1c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7852ab30, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3d3a28b5, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@29a50a11, org.springframework.security.web.session.SessionManagementFilter@457b8fc3, org.springframework.security.web.access.ExceptionTranslationFilter@5443086a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@486bcaa]
+2024-11-12 20:09:13.433  INFO 12604 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2024-11-12 20:09:13.673  INFO 12604 --- [main] c.example.demo.SareetaApplicationTests   : Started SareetaApplicationTests in 4.192 seconds (JVM running for 5.466)
+2024-11-12 20:09:14.037  INFO 12604 --- [main] c.e.demo.controllers.UserController      : Received request to create user with username: testUser
+2024-11-12 20:09:14.038  WARN 12604 --- [main] c.e.demo.controllers.UserController      : Password validation failed for username: testUser
+2024-11-12 20:09:14.038 ERROR 12604 --- [main] c.e.demo.controllers.UserController      : CreateUser request failures for username: testUser
+2024-11-12 20:09:14.043  INFO 12604 --- [main] c.e.demo.controllers.UserController      : Received request to find user by username: unknownUser
+2024-11-12 20:09:14.044  WARN 12604 --- [main] c.e.demo.controllers.UserController      : User not found for username: unknownUser
+2024-11-12 20:09:14.046  INFO 12604 --- [main] c.e.demo.controllers.UserController      : Received request to find user by ID: 1
+2024-11-12 20:09:14.055  INFO 12604 --- [main] c.e.demo.controllers.UserController      : Received request to find user by ID: 1
+2024-11-12 20:09:14.059  INFO 12604 --- [main] c.e.demo.controllers.UserController      : Received request to create user with username: testUser
+2024-11-12 20:09:14.059  WARN 12604 --- [main] c.e.demo.controllers.UserController      : Password validation failed for username: testUser
+2024-11-12 20:09:14.059 ERROR 12604 --- [main] c.e.demo.controllers.UserController      : CreateUser request failures for username: testUser
+2024-11-12 20:09:14.063  INFO 12604 --- [main] c.e.demo.controllers.UserController      : Received request to create user with username: testUser
+2024-11-12 20:09:14.064  INFO 12604 --- [main] c.e.demo.controllers.UserController      : CreateUser request successes with username: testUser
+2024-11-12 20:09:14.079  INFO 12604 --- [main] c.e.demo.controllers.UserController      : Received request to find user by username: testUser
+2024-11-12 20:09:14.079  INFO 12604 --- [main] c.e.demo.controllers.UserController      : User found for username: testUser
+2024-11-12 20:09:14.134  INFO 12604 --- [main] c.e.demo.controllers.OrderController     : Received request for order history of username: unknownUser
+2024-11-12 20:09:14.135  WARN 12604 --- [main] c.e.demo.controllers.OrderController     : Order history request failed: User not found for username: unknownUser
+2024-11-12 20:09:14.138  INFO 12604 --- [main] c.e.demo.controllers.OrderController     : Received order submission request for username: unknownUser
+2024-11-12 20:09:14.138  WARN 12604 --- [main] c.e.demo.controllers.OrderController     : Order submission failed: User not found for username: unknownUser
+2024-11-12 20:09:14.138 ERROR 12604 --- [main] c.e.demo.controllers.OrderController     : Order requests failures: User not found for username: unknownUser
+2024-11-12 20:09:14.140  INFO 12604 --- [main] c.e.demo.controllers.OrderController     : Received request for order history of username: testUser
+2024-11-12 20:09:14.141  INFO 12604 --- [main] c.e.demo.controllers.OrderController     : Order history successfully retrieved for username: testUser
+2024-11-12 20:09:14.144  INFO 12604 --- [main] c.e.demo.controllers.OrderController     : Received order submission request for username: testUser
+2024-11-12 20:09:14.144  INFO 12604 --- [main] c.e.demo.controllers.OrderController     : Order requests successes created for username: testUser
+2024-11-12 20:09:14.151  INFO 12604 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2024-11-12 20:09:14.152  INFO 12604 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-12 20:09:14.154  INFO 12604 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-11-12 20:09:14.157  INFO 12604 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-11-12 20:09:33.443  INFO 16164 --- [main] c.example.demo.SareetaApplicationTests   : Starting SareetaApplicationTests on DESKTOP-4II72Q0 with PID 16164 (started by dt in D:\Udacity\JavaSping\projects\security-and-devOps\starter_code)
+2024-11-12 20:09:33.444  INFO 16164 --- [main] c.example.demo.SareetaApplicationTests   : No active profile set, falling back to default profiles: default
+2024-11-12 20:09:33.979  INFO 16164 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-12 20:09:34.049  INFO 16164 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 61ms. Found 4 JPA repository interfaces.
+2024-11-12 20:09:35.031  INFO 16164 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-12 20:09:35.084  INFO 16164 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.18.Final
+2024-11-12 20:09:35.196  INFO 16164 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2024-11-12 20:09:35.296  INFO 16164 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-11-12 20:09:35.472  INFO 16164 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-11-12 20:09:35.489  INFO 16164 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2024-11-12 20:09:36.316  INFO 16164 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-11-12 20:09:36.326  INFO 16164 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-12 20:09:36.968  WARN 16164 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-12 20:09:37.838  INFO 16164 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2e7e4480, org.springframework.security.web.context.SecurityContextPersistenceFilter@35840ecc, org.springframework.security.web.header.HeaderWriterFilter@43ca96a0, org.springframework.web.filter.CorsFilter@8beb0dd, org.springframework.security.web.authentication.logout.LogoutFilter@45635ae1, com.example.demo.security.JWTAuthenticationFilter@3d99d327, com.example.demo.security.JWTAuthenticationVerficationFilter@233789d9, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5e9f1a4c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7852ab30, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7f31937b, org.springframework.security.web.session.SessionManagementFilter@5740ad76, org.springframework.security.web.access.ExceptionTranslationFilter@f60c14e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@515d615]
+2024-11-12 20:09:38.169  INFO 16164 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2024-11-12 20:09:38.440  INFO 16164 --- [main] c.example.demo.SareetaApplicationTests   : Started SareetaApplicationTests in 5.299 seconds (JVM running for 6.616)
+2024-11-12 20:09:38.929  INFO 16164 --- [main] c.e.demo.controllers.UserController      : Received request to create user with username: testUser
+2024-11-12 20:09:38.930  WARN 16164 --- [main] c.e.demo.controllers.UserController      : Password validation failed for username: testUser
+2024-11-12 20:09:38.930 ERROR 16164 --- [main] c.e.demo.controllers.UserController      : CreateUser request failures for username: testUser
+2024-11-12 20:09:38.934  INFO 16164 --- [main] c.e.demo.controllers.UserController      : Received request to find user by username: unknownUser
+2024-11-12 20:09:38.935  WARN 16164 --- [main] c.e.demo.controllers.UserController      : User not found for username: unknownUser
+2024-11-12 20:09:38.937  INFO 16164 --- [main] c.e.demo.controllers.UserController      : Received request to find user by ID: 1
+2024-11-12 20:09:38.945  INFO 16164 --- [main] c.e.demo.controllers.UserController      : Received request to find user by ID: 1
+2024-11-12 20:09:38.948  INFO 16164 --- [main] c.e.demo.controllers.UserController      : Received request to create user with username: testUser
+2024-11-12 20:09:38.948  WARN 16164 --- [main] c.e.demo.controllers.UserController      : Password validation failed for username: testUser
+2024-11-12 20:09:38.948 ERROR 16164 --- [main] c.e.demo.controllers.UserController      : CreateUser request failures for username: testUser
+2024-11-12 20:09:38.951  INFO 16164 --- [main] c.e.demo.controllers.UserController      : Received request to create user with username: testUser
+2024-11-12 20:09:38.952  INFO 16164 --- [main] c.e.demo.controllers.UserController      : CreateUser request successes with username: testUser
+2024-11-12 20:09:38.956  INFO 16164 --- [main] c.e.demo.controllers.UserController      : Received request to find user by username: testUser
+2024-11-12 20:09:38.957  INFO 16164 --- [main] c.e.demo.controllers.UserController      : User found for username: testUser
+2024-11-12 20:09:39.017  INFO 16164 --- [main] c.e.demo.controllers.OrderController     : Received request for order history of username: unknownUser
+2024-11-12 20:09:39.017  WARN 16164 --- [main] c.e.demo.controllers.OrderController     : Order history request failed: User not found for username: unknownUser
+2024-11-12 20:09:39.021  INFO 16164 --- [main] c.e.demo.controllers.OrderController     : Received order submission request for username: unknownUser
+2024-11-12 20:09:39.022  WARN 16164 --- [main] c.e.demo.controllers.OrderController     : Order submission failed: User not found for username: unknownUser
+2024-11-12 20:09:39.022 ERROR 16164 --- [main] c.e.demo.controllers.OrderController     : Order requests failures: User not found for username: unknownUser
+2024-11-12 20:09:39.025  INFO 16164 --- [main] c.e.demo.controllers.OrderController     : Received request for order history of username: testUser
+2024-11-12 20:09:39.025  INFO 16164 --- [main] c.e.demo.controllers.OrderController     : Order history successfully retrieved for username: testUser
+2024-11-12 20:09:39.028  INFO 16164 --- [main] c.e.demo.controllers.OrderController     : Received order submission request for username: testUser
+2024-11-12 20:09:39.028  INFO 16164 --- [main] c.e.demo.controllers.OrderController     : Order requests successes created for username: testUser
+2024-11-12 20:09:39.034  INFO 16164 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2024-11-12 20:09:39.036  INFO 16164 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-12 20:09:39.038  INFO 16164 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-11-12 20:09:39.041  INFO 16164 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-11-12 20:10:06.599  INFO 15332 --- [main] c.example.demo.SareetaApplicationTests   : Starting SareetaApplicationTests on DESKTOP-4II72Q0 with PID 15332 (started by dt in D:\Udacity\JavaSping\projects\security-and-devOps\starter_code)
+2024-11-12 20:10:06.600  INFO 15332 --- [main] c.example.demo.SareetaApplicationTests   : No active profile set, falling back to default profiles: default
+2024-11-12 20:10:07.259  INFO 15332 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-12 20:10:07.334  INFO 15332 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 64ms. Found 4 JPA repository interfaces.
+2024-11-12 20:10:08.228  INFO 15332 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-12 20:10:08.279  INFO 15332 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.18.Final
+2024-11-12 20:10:08.401  INFO 15332 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2024-11-12 20:10:08.510  INFO 15332 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-11-12 20:10:08.665  INFO 15332 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-11-12 20:10:08.681  INFO 15332 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2024-11-12 20:10:09.315  INFO 15332 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-11-12 20:10:09.321  INFO 15332 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-12 20:10:09.804  WARN 15332 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-12 20:10:10.351  INFO 15332 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@16745abd, org.springframework.security.web.context.SecurityContextPersistenceFilter@417751d3, org.springframework.security.web.header.HeaderWriterFilter@37a1beb3, org.springframework.web.filter.CorsFilter@4d793390, org.springframework.security.web.authentication.logout.LogoutFilter@56e78538, com.example.demo.security.JWTAuthenticationFilter@3a359f7c, com.example.demo.security.JWTAuthenticationVerficationFilter@138b9abe, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@65259737, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5cf80dfb, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@279e8bc0, org.springframework.security.web.session.SessionManagementFilter@7c8689e, org.springframework.security.web.access.ExceptionTranslationFilter@35840ecc, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@320efff5]
+2024-11-12 20:10:10.550  INFO 15332 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2024-11-12 20:10:10.756  INFO 15332 --- [main] c.example.demo.SareetaApplicationTests   : Started SareetaApplicationTests in 4.637 seconds (JVM running for 6.126)
+2024-11-12 20:10:11.186  INFO 15332 --- [main] c.e.demo.controllers.UserController      : Received request to create user with username: testUser
+2024-11-12 20:10:11.186  WARN 15332 --- [main] c.e.demo.controllers.UserController      : Password validation failed for username: testUser
+2024-11-12 20:10:11.186 ERROR 15332 --- [main] c.e.demo.controllers.UserController      : CreateUser request failures for username: testUser
+2024-11-12 20:10:11.190  INFO 15332 --- [main] c.e.demo.controllers.UserController      : Received request to find user by username: unknownUser
+2024-11-12 20:10:11.190  WARN 15332 --- [main] c.e.demo.controllers.UserController      : User not found for username: unknownUser
+2024-11-12 20:10:11.193  INFO 15332 --- [main] c.e.demo.controllers.UserController      : Received request to find user by ID: 1
+2024-11-12 20:10:11.200  INFO 15332 --- [main] c.e.demo.controllers.UserController      : Received request to find user by ID: 1
+2024-11-12 20:10:11.202  INFO 15332 --- [main] c.e.demo.controllers.UserController      : Received request to create user with username: testUser
+2024-11-12 20:10:11.203  WARN 15332 --- [main] c.e.demo.controllers.UserController      : Password validation failed for username: testUser
+2024-11-12 20:10:11.203 ERROR 15332 --- [main] c.e.demo.controllers.UserController      : CreateUser request failures for username: testUser
+2024-11-12 20:10:11.206  INFO 15332 --- [main] c.e.demo.controllers.UserController      : Received request to create user with username: testUser
+2024-11-12 20:10:11.207  INFO 15332 --- [main] c.e.demo.controllers.UserController      : CreateUser request successes with username: testUser
+2024-11-12 20:10:11.213  INFO 15332 --- [main] c.e.demo.controllers.UserController      : Received request to find user by username: testUser
+2024-11-12 20:10:11.213  INFO 15332 --- [main] c.e.demo.controllers.UserController      : User found for username: testUser
+2024-11-12 20:10:11.260  INFO 15332 --- [main] c.e.demo.controllers.OrderController     : Received request for order history of username: unknownUser
+2024-11-12 20:10:11.261  WARN 15332 --- [main] c.e.demo.controllers.OrderController     : Order history request failed: User not found for username: unknownUser
+2024-11-12 20:10:11.263  INFO 15332 --- [main] c.e.demo.controllers.OrderController     : Received order submission request for username: unknownUser
+2024-11-12 20:10:11.263  WARN 15332 --- [main] c.e.demo.controllers.OrderController     : Order submission failed: User not found for username: unknownUser
+2024-11-12 20:10:11.263 ERROR 15332 --- [main] c.e.demo.controllers.OrderController     : Order requests failures: User not found for username: unknownUser
+2024-11-12 20:10:11.265  INFO 15332 --- [main] c.e.demo.controllers.OrderController     : Received request for order history of username: testUser
+2024-11-12 20:10:11.266  INFO 15332 --- [main] c.e.demo.controllers.OrderController     : Order history successfully retrieved for username: testUser
+2024-11-12 20:10:11.268  INFO 15332 --- [main] c.e.demo.controllers.OrderController     : Received order submission request for username: testUser
+2024-11-12 20:10:11.268  INFO 15332 --- [main] c.e.demo.controllers.OrderController     : Order requests successes created for username: testUser
+2024-11-12 20:10:11.273  INFO 15332 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2024-11-12 20:10:11.274  INFO 15332 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-12 20:10:11.277  INFO 15332 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-11-12 20:10:11.280  INFO 15332 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-11-12 20:37:04.919  INFO 11780 --- [main] c.example.demo.SareetaApplicationTests   : Starting SareetaApplicationTests on DESKTOP-4II72Q0 with PID 11780 (started by dt in D:\Udacity\JavaSping\projects\security-and-devOps\starter_code)
+2024-11-12 20:37:04.922  INFO 11780 --- [main] c.example.demo.SareetaApplicationTests   : No active profile set, falling back to default profiles: default
+2024-11-12 20:37:05.608  INFO 11780 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-12 20:37:05.758  INFO 11780 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 129ms. Found 4 JPA repository interfaces.
+2024-11-12 20:37:06.990  INFO 11780 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-12 20:37:07.081  INFO 11780 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.18.Final
+2024-11-12 20:37:07.363  INFO 11780 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2024-11-12 20:37:07.586  INFO 11780 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-11-12 20:37:07.879  INFO 11780 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-11-12 20:37:07.908  INFO 11780 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2024-11-12 20:37:09.921  INFO 11780 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-11-12 20:37:09.935  INFO 11780 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-12 20:37:10.643  WARN 11780 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-12 20:37:11.333  INFO 11780 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@65fa4a07, org.springframework.security.web.context.SecurityContextPersistenceFilter@5740ad76, org.springframework.security.web.header.HeaderWriterFilter@22b3b5d0, org.springframework.web.filter.CorsFilter@782143e8, org.springframework.security.web.authentication.logout.LogoutFilter@564d3940, com.example.demo.security.JWTAuthenticationFilter@2a4bd699, com.example.demo.security.JWTAuthenticationVerficationFilter@6003eb60, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@35840ecc, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1e54e900, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@571e2f15, org.springframework.security.web.session.SessionManagementFilter@43ca96a0, org.springframework.security.web.access.ExceptionTranslationFilter@20d65767, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@219db855]
+2024-11-12 20:37:11.572  INFO 11780 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2024-11-12 20:37:11.937  INFO 11780 --- [main] c.example.demo.SareetaApplicationTests   : Started SareetaApplicationTests in 7.429 seconds (JVM running for 9.624)
+2024-11-12 20:37:12.652  INFO 11780 --- [main] c.e.demo.controllers.UserController      : Received request to create user with username: testUser
+2024-11-12 20:37:12.652  WARN 11780 --- [main] c.e.demo.controllers.UserController      : Password validation failed for username: testUser
+2024-11-12 20:37:12.652 ERROR 11780 --- [main] c.e.demo.controllers.UserController      : CreateUser request failures for username: testUser
+2024-11-12 20:37:12.657  INFO 11780 --- [main] c.e.demo.controllers.UserController      : Received request to find user by username: unknownUser
+2024-11-12 20:37:12.657  WARN 11780 --- [main] c.e.demo.controllers.UserController      : User not found for username: unknownUser
+2024-11-12 20:37:12.662  INFO 11780 --- [main] c.e.demo.controllers.UserController      : Received request to find user by ID: 1
+2024-11-12 20:37:12.674  INFO 11780 --- [main] c.e.demo.controllers.UserController      : Received request to find user by ID: 1
+2024-11-12 20:37:12.677  INFO 11780 --- [main] c.e.demo.controllers.UserController      : Received request to create user with username: testUser
+2024-11-12 20:37:12.678  WARN 11780 --- [main] c.e.demo.controllers.UserController      : Password validation failed for username: testUser
+2024-11-12 20:37:12.678 ERROR 11780 --- [main] c.e.demo.controllers.UserController      : CreateUser request failures for username: testUser
+2024-11-12 20:37:12.690  INFO 11780 --- [main] c.e.demo.controllers.UserController      : Received request to create user with username: testUser
+2024-11-12 20:37:12.690  INFO 11780 --- [main] c.e.demo.controllers.UserController      : CreateUser request successes with username: testUser
+2024-11-12 20:37:12.695  INFO 11780 --- [main] c.e.demo.controllers.UserController      : Received request to find user by username: testUser
+2024-11-12 20:37:12.696  INFO 11780 --- [main] c.e.demo.controllers.UserController      : User found for username: testUser
+2024-11-12 20:37:12.768  INFO 11780 --- [main] c.e.demo.controllers.OrderController     : Received request for order history of username: unknownUser
+2024-11-12 20:37:12.768  WARN 11780 --- [main] c.e.demo.controllers.OrderController     : Order history request failed: User not found for username: unknownUser
+2024-11-12 20:37:12.771  INFO 11780 --- [main] c.e.demo.controllers.OrderController     : Received order submission request for username: unknownUser
+2024-11-12 20:37:12.772  WARN 11780 --- [main] c.e.demo.controllers.OrderController     : Order submission failed: User not found for username: unknownUser
+2024-11-12 20:37:12.772 ERROR 11780 --- [main] c.e.demo.controllers.OrderController     : Order requests failures: User not found for username: unknownUser
+2024-11-12 20:37:12.775  INFO 11780 --- [main] c.e.demo.controllers.OrderController     : Received request for order history of username: testUser
+2024-11-12 20:37:12.776  INFO 11780 --- [main] c.e.demo.controllers.OrderController     : Order history successfully retrieved for username: testUser
+2024-11-12 20:37:12.779  INFO 11780 --- [main] c.e.demo.controllers.OrderController     : Received order submission request for username: testUser
+2024-11-12 20:37:12.779  INFO 11780 --- [main] c.e.demo.controllers.OrderController     : Order requests successes created for username: testUser
+2024-11-12 20:37:12.786  INFO 11780 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2024-11-12 20:37:12.788  INFO 11780 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-12 20:37:12.791  INFO 11780 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-11-12 20:37:12.793  INFO 11780 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-11-12 20:37:20.184  INFO 18652 --- [main] c.example.demo.SareetaApplicationTests   : Starting SareetaApplicationTests on DESKTOP-4II72Q0 with PID 18652 (started by dt in D:\Udacity\JavaSping\projects\security-and-devOps\starter_code)
+2024-11-12 20:37:20.186  INFO 18652 --- [main] c.example.demo.SareetaApplicationTests   : No active profile set, falling back to default profiles: default
+2024-11-12 20:37:20.787  INFO 18652 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-12 20:37:20.862  INFO 18652 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 63ms. Found 4 JPA repository interfaces.
+2024-11-12 20:37:22.184  INFO 18652 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-12 20:37:22.272  INFO 18652 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.18.Final
+2024-11-12 20:37:22.534  INFO 18652 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2024-11-12 20:37:22.743  INFO 18652 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-11-12 20:37:23.060  INFO 18652 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-11-12 20:37:23.088  INFO 18652 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2024-11-12 20:37:24.100  INFO 18652 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-11-12 20:37:24.107  INFO 18652 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-12 20:37:24.797  WARN 18652 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-12 20:37:25.352  INFO 18652 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7187078a, org.springframework.security.web.context.SecurityContextPersistenceFilter@7852ab30, org.springframework.security.web.header.HeaderWriterFilter@457b8fc3, org.springframework.web.filter.CorsFilter@6e612122, org.springframework.security.web.authentication.logout.LogoutFilter@c7cf8c4, com.example.demo.security.JWTAuthenticationFilter@1d38cdde, com.example.demo.security.JWTAuthenticationVerficationFilter@3809f65d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@8c3b634, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@306bf4c3, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@717b0d81, org.springframework.security.web.session.SessionManagementFilter@1e54e900, org.springframework.security.web.access.ExceptionTranslationFilter@79c849c7, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3b3190fd]
+2024-11-12 20:37:25.550  INFO 18652 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2024-11-12 20:37:25.796  INFO 18652 --- [main] c.example.demo.SareetaApplicationTests   : Started SareetaApplicationTests in 6.04 seconds (JVM running for 7.336)
+2024-11-12 20:37:26.333  INFO 18652 --- [main] c.e.demo.controllers.UserController      : Received request to create user with username: testUser
+2024-11-12 20:37:26.334  WARN 18652 --- [main] c.e.demo.controllers.UserController      : Password validation failed for username: testUser
+2024-11-12 20:37:26.334 ERROR 18652 --- [main] c.e.demo.controllers.UserController      : CreateUser request failures for username: testUser
+2024-11-12 20:37:26.339  INFO 18652 --- [main] c.e.demo.controllers.UserController      : Received request to find user by username: unknownUser
+2024-11-12 20:37:26.339  WARN 18652 --- [main] c.e.demo.controllers.UserController      : User not found for username: unknownUser
+2024-11-12 20:37:26.344  INFO 18652 --- [main] c.e.demo.controllers.UserController      : Received request to find user by ID: 1
+2024-11-12 20:37:26.351  INFO 18652 --- [main] c.e.demo.controllers.UserController      : Received request to find user by ID: 1
+2024-11-12 20:37:26.354  INFO 18652 --- [main] c.e.demo.controllers.UserController      : Received request to create user with username: testUser
+2024-11-12 20:37:26.354  WARN 18652 --- [main] c.e.demo.controllers.UserController      : Password validation failed for username: testUser
+2024-11-12 20:37:26.354 ERROR 18652 --- [main] c.e.demo.controllers.UserController      : CreateUser request failures for username: testUser
+2024-11-12 20:37:26.358  INFO 18652 --- [main] c.e.demo.controllers.UserController      : Received request to create user with username: testUser
+2024-11-12 20:37:26.360  INFO 18652 --- [main] c.e.demo.controllers.UserController      : CreateUser request successes with username: testUser
+2024-11-12 20:37:26.368  INFO 18652 --- [main] c.e.demo.controllers.UserController      : Received request to find user by username: testUser
+2024-11-12 20:37:26.368  INFO 18652 --- [main] c.e.demo.controllers.UserController      : User found for username: testUser
+2024-11-12 20:37:26.445  INFO 18652 --- [main] c.e.demo.controllers.OrderController     : Received request for order history of username: unknownUser
+2024-11-12 20:37:26.446  WARN 18652 --- [main] c.e.demo.controllers.OrderController     : Order history request failed: User not found for username: unknownUser
+2024-11-12 20:37:26.449  INFO 18652 --- [main] c.e.demo.controllers.OrderController     : Received order submission request for username: unknownUser
+2024-11-12 20:37:26.450  WARN 18652 --- [main] c.e.demo.controllers.OrderController     : Order submission failed: User not found for username: unknownUser
+2024-11-12 20:37:26.450 ERROR 18652 --- [main] c.e.demo.controllers.OrderController     : Order requests failures: User not found for username: unknownUser
+2024-11-12 20:37:26.454  INFO 18652 --- [main] c.e.demo.controllers.OrderController     : Received request for order history of username: testUser
+2024-11-12 20:37:26.455  INFO 18652 --- [main] c.e.demo.controllers.OrderController     : Order history successfully retrieved for username: testUser
+2024-11-12 20:37:26.458  INFO 18652 --- [main] c.e.demo.controllers.OrderController     : Received order submission request for username: testUser
+2024-11-12 20:37:26.459  INFO 18652 --- [main] c.e.demo.controllers.OrderController     : Order requests successes created for username: testUser
+2024-11-12 20:37:26.464  INFO 18652 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2024-11-12 20:37:26.466  INFO 18652 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-12 20:37:26.469  INFO 18652 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-11-12 20:37:26.472  INFO 18652 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-11-12 21:00:15.680  INFO 14988 --- [main] c.example.demo.SareetaApplicationTests   : Starting SareetaApplicationTests on DESKTOP-4II72Q0 with PID 14988 (started by dt in D:\Udacity\JavaSping\projects\security-and-devOps\starter_code)
+2024-11-12 21:00:15.684  INFO 14988 --- [main] c.example.demo.SareetaApplicationTests   : No active profile set, falling back to default profiles: default
+2024-11-12 21:00:16.202  INFO 14988 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-12 21:00:16.259  INFO 14988 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 48ms. Found 4 JPA repository interfaces.
+2024-11-12 21:00:17.042  INFO 14988 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-12 21:00:17.089  INFO 14988 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.18.Final
+2024-11-12 21:00:17.200  INFO 14988 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2024-11-12 21:00:17.303  INFO 14988 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-11-12 21:00:17.464  INFO 14988 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-11-12 21:00:17.479  INFO 14988 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2024-11-12 21:00:18.118  INFO 14988 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-11-12 21:00:18.123  INFO 14988 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-12 21:00:18.652  WARN 14988 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-12 21:00:19.182  INFO 14988 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@92b1bda, org.springframework.security.web.context.SecurityContextPersistenceFilter@564d3940, org.springframework.security.web.header.HeaderWriterFilter@3130ca39, org.springframework.web.filter.CorsFilter@57bfca3a, org.springframework.security.web.authentication.logout.LogoutFilter@64b8eb96, com.example.demo.security.JWTAuthenticationFilter@58690f5e, com.example.demo.security.JWTAuthenticationVerficationFilter@4b9d2cee, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@45635ae1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4abdd5e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1a390b8c, org.springframework.security.web.session.SessionManagementFilter@696ce057, org.springframework.security.web.access.ExceptionTranslationFilter@38a52072, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7f31937b]
+2024-11-12 21:00:19.357  INFO 14988 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2024-11-12 21:00:19.557  INFO 14988 --- [main] c.example.demo.SareetaApplicationTests   : Started SareetaApplicationTests in 4.317 seconds (JVM running for 5.563)
+2024-11-12 21:00:19.979  INFO 14988 --- [main] c.e.demo.controllers.UserController      : Received request to create user with username: testUser
+2024-11-12 21:00:19.979  WARN 14988 --- [main] c.e.demo.controllers.UserController      : Password validation failed for username: testUser
+2024-11-12 21:00:19.980 ERROR 14988 --- [main] c.e.demo.controllers.UserController      : CreateUser request failures for username: testUser
+2024-11-12 21:00:19.983  INFO 14988 --- [main] c.e.demo.controllers.UserController      : Received request to find user by username: unknownUser
+2024-11-12 21:00:19.984  WARN 14988 --- [main] c.e.demo.controllers.UserController      : User not found for username: unknownUser
+2024-11-12 21:00:19.987  INFO 14988 --- [main] c.e.demo.controllers.UserController      : Received request to find user by ID: 1
+2024-11-12 21:00:19.992  INFO 14988 --- [main] c.e.demo.controllers.UserController      : Received request to find user by ID: 1
+2024-11-12 21:00:19.995  INFO 14988 --- [main] c.e.demo.controllers.UserController      : Received request to create user with username: testUser
+2024-11-12 21:00:19.995  WARN 14988 --- [main] c.e.demo.controllers.UserController      : Password validation failed for username: testUser
+2024-11-12 21:00:19.995 ERROR 14988 --- [main] c.e.demo.controllers.UserController      : CreateUser request failures for username: testUser
+2024-11-12 21:00:19.999  INFO 14988 --- [main] c.e.demo.controllers.UserController      : Received request to create user with username: testUser
+2024-11-12 21:00:19.999  INFO 14988 --- [main] c.e.demo.controllers.UserController      : CreateUser request successes with username: testUser
+2024-11-12 21:00:20.004  INFO 14988 --- [main] c.e.demo.controllers.UserController      : Received request to find user by username: testUser
+2024-11-12 21:00:20.004  INFO 14988 --- [main] c.e.demo.controllers.UserController      : User found for username: testUser
+2024-11-12 21:00:20.065  INFO 14988 --- [main] c.e.demo.controllers.OrderController     : Received request for order history of username: unknownUser
+2024-11-12 21:00:20.065  WARN 14988 --- [main] c.e.demo.controllers.OrderController     : Order history request failed: User not found for username: unknownUser
+2024-11-12 21:00:20.067  INFO 14988 --- [main] c.e.demo.controllers.OrderController     : Received order submission request for username: unknownUser
+2024-11-12 21:00:20.068  WARN 14988 --- [main] c.e.demo.controllers.OrderController     : Order submission failed: User not found for username: unknownUser
+2024-11-12 21:00:20.068 ERROR 14988 --- [main] c.e.demo.controllers.OrderController     : Order requests failures: User not found for username: unknownUser
+2024-11-12 21:00:20.071  INFO 14988 --- [main] c.e.demo.controllers.OrderController     : Received request for order history of username: testUser
+2024-11-12 21:00:20.072  INFO 14988 --- [main] c.e.demo.controllers.OrderController     : Order history successfully retrieved for username: testUser
+2024-11-12 21:00:20.074  INFO 14988 --- [main] c.e.demo.controllers.OrderController     : Received order submission request for username: testUser
+2024-11-12 21:00:20.074  INFO 14988 --- [main] c.e.demo.controllers.OrderController     : Order requests successes created for username: testUser
+2024-11-12 21:00:20.079  INFO 14988 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2024-11-12 21:00:20.081  INFO 14988 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-12 21:00:20.083  INFO 14988 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-11-12 21:00:20.086  INFO 14988 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

@@ -9,6 +9,7 @@ pipeline {
         stage('Build') {
             steps {
                 dir('starter_code') { // Chuyển vào thư mục starter_code
+                   sh 'chmod +x mvnw'
                    sh './mvnw clean package'
                 }
             }

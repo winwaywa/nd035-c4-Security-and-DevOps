@@ -8,7 +8,9 @@ pipeline {
         }
         stage('Build') {
             steps {
-                sh './mvnw clean package'
+                dir('starter_code') { // Chuyển vào thư mục starter_code
+                   sh './mvnw clean package'
+                }
             }
         }
         stage('Docker Build and Push') {

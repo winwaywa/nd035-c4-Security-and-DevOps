@@ -17,7 +17,7 @@ pipeline {
         stage('Docker Build and Push') {
             steps {
                 script {
-                    docker.withRegistry('https://index.docker.io/v1/', 'docker-hub-credentials') {
+                    docker.withRegistry('https://index.docker.io/v1/', '2a5add46-c3fe-4fbe-b6f4-c912f1ef4981') {
                         def appImage = docker.build("winwaywa/nd035-c4-security-and-devops")
                         appImage.push('latest')
                     }

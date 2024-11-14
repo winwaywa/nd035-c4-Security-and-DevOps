@@ -17,7 +17,7 @@ pipeline {
         stage('Docker Build and Push') {
             steps {
                 script {
-                    docker.withRegistry('https://registry.hub.docker.com', '2a5add46-c3fe-4fbe-b6f4-c912f1ef4981') {
+                    docker.withRegistry('', '2a5add46-c3fe-4fbe-b6f4-c912f1ef4981') {
                         def appImage = docker.build("hiimhiep/nd035-c4-security-and-devops")
                         appImage.push('latest')
                     }

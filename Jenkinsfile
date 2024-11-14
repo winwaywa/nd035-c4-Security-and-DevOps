@@ -18,7 +18,7 @@ pipeline {
             steps {
                 script {
                     docker.withRegistry('https://registry.hub.docker.com', '2a5add46-c3fe-4fbe-b6f4-c912f1ef4981') {
-                        def appImage = docker.build("winwaywa/nd035-c4-security-and-devops")
+                        def appImage = docker.build("hiimhiep/nd035-c4-security-and-devops")
                         appImage.push('latest')
                     }
                 }
@@ -29,7 +29,7 @@ pipeline {
                 sh '''
                 docker stop spring_app || true
                 docker rm spring_app || true
-                docker run -d --name spring_app -p 8080:8080 winwaywa/nd035-c4-security-and-devops:latest
+                docker run -d --name spring_app -p 8080:8080 hiimhiep/nd035-c4-security-and-devops:latest
                 '''
             }
         }

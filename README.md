@@ -78,3 +78,46 @@ and that should, if those are valid credentials, return a 200 OK with an Authori
 
 ## Testing
 You must implement unit tests demonstrating at least 80% code coverage.
+
+
+## Implement DI/CD
+Step 1. Run the Jenkins container on local Docker:
+1.1
+```
+docker run -d --name jenkinsHiep -v /var/run/docker.sock:/var/run/docker.sock -v jenkins_home:/var/jenkins_home -p 9090:8080 -p 50000:50000 jenkins/jenkins:lts
+```
+1.2
+Get the initial admin password:
+```
+docker exec jenkinsHiep cat /var/jenkins_home/secrets/initialAdminPassword
+```
+1.3
+Install necessary plugins: Pipeline, Docker Pipeline Plugin, Git Plugin, etc.  
+1.4
+Add authentication using Docker's access token.  
+1.5
+Open a terminal inside the Jenkins container:
+```
+docker exec -u 0 -it jenkinsHiep bash
+```
+1.6
+Install Docker inside the Jenkins container:
+```
+apt update  
+apt install docker.io -y
+```
+1.7
+Grant Jenkins container access to the Docker daemon:
+Option 1:
+```
+chmod 666 /var/run/docker.sock  # Security risk
+```
+Option 2:
+```
+usermod -aG docker jenkins
+```
+Step 2. Create a Jenkins Pipeline in the source repository:  
+Use docker-hub-credentials: Jenkins credentials ID authenticated with Docker's access token.  
+Step 3. Add a Dockerfile to allow Docker to build images from the .jar project.  
+Step 4. Create a Pipeline item in Jenkins and link it with the Git repository resource.  
+Trigger the Build process.

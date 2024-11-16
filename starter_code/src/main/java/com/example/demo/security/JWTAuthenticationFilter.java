@@ -58,4 +58,14 @@ public class JWTAuthenticationFilter extends UsernamePasswordAuthenticationFilte
                 .sign(HMAC512(SecurityConstants.SECRET.getBytes()));
         res.addHeader(SecurityConstants.HEADER_STRING, SecurityConstants.TOKEN_PREFIX + token);
     }
+
+    @Override
+    protected void unsuccessfulAuthentication(HttpServletRequest req,
+                                              HttpServletResponse res,
+                                              AuthenticationException failed) throws IOException, ServletException {
+        res.setStatus(HttpServletResponse.SC_UNAUTHORIZED); // Mã HTTP 401
+        res.setContentType("application/json");
+        res.getWriter().flush();
+        res.getWriter().close();
+    }
 }
